@@ -19,6 +19,10 @@ header .navbar {
   padding-left: 50%;
   height: 100%;
 }
+header .navbar :hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 header .navbar .menu {
   background-color: #f38181;
   width: 10%;
@@ -32,13 +36,14 @@ header .navbar .menu img {
 
 main {
   height: 100%;
+  width: 100%;
 }
 main .wellcomecontainer {
   background-image: url(../slike/intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 73%;
+  height: 85%;
   text-align: center;
   display: flex;
   align-items: flex-end;
@@ -51,11 +56,32 @@ main .wellcomecontainer .wellcomeh {
   padding-top: 1%;
 }
 main .wellcomecontainer .wellcomeh h1 {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 48px;
 }
-main .wellcomecontainer .wellcomeh h1, main .wellcomecontainer .wellcomeh h4, main .wellcomecontainer .wellcomeh h5 {
+main .wellcomecontainer .wellcomeh h1,
+main .wellcomecontainer .wellcomeh h4,
+main .wellcomecontainer .wellcomeh h5 {
   margin: 0;
+}
+
+.filter {
+  padding-left: 50%;
+  width: 35%;
+  height: 10%;
+}
+.filter button {
+  border-color: rgb(161, 161, 161);
+  color: rgb(161, 161, 161);
+  border-radius: 50px;
+  background-color: white;
+  padding: 3%;
+  margin: 4%;
+}
+.filter button:hover {
+  cursor: pointer;
+  background-color: rgb(161, 161, 161);
+  color: white;
 }
 
 /*# sourceMappingURL=domaci9.css.map */
