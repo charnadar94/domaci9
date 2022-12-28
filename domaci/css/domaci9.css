@@ -87,8 +87,7 @@ main .images {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-main .images .imagetext1,
-main .images .imagetext2 {
+main .images .imagetext {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,20 +95,28 @@ main .images .imagetext2 {
   margin-left: 30%;
   margin-right: 30%;
 }
-main .images .imagetext1 img,
-main .images .imagetext2 img {
+main .images .imagetext img {
+  opacity: 60%;
   border-radius: 50%;
   width: 20%;
   height: 20%;
 }
-main .images .imagetext1 .text,
-main .images .imagetext2 .text {
-  display: none;
+main .images .imagetext img:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
-main .images .imagetext1 .text p,
-main .images .imagetext2 .text p {
+main .images .imagetext .text {
+  opacity: 0;
+}
+main .images .imagetext .text p {
   color: red;
   margin: 0;
+}
+main .images .imagetext img + .text {
+  opacity: 0;
+}
+main .images .imagetext img:hover + .text {
+  opacity: 100%;
 }
 
 /*# sourceMappingURL=domaci9.css.map */
