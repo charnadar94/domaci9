@@ -64,13 +64,11 @@ main .wellcomecontainer .wellcomeh h4,
 main .wellcomecontainer .wellcomeh h5 {
   margin: 0;
 }
-
-.filter {
+main .filter {
   padding-left: 50%;
   width: 35%;
-  height: 10%;
 }
-.filter button {
+main .filter button {
   border-color: rgb(161, 161, 161);
   color: rgb(161, 161, 161);
   border-radius: 50px;
@@ -78,10 +76,40 @@ main .wellcomecontainer .wellcomeh h5 {
   padding: 3%;
   margin: 4%;
 }
-.filter button:hover {
+main .filter button:hover {
   cursor: pointer;
   background-color: rgb(161, 161, 161);
   color: white;
+}
+main .images {
+  width: 100%;
+  background-color: #f3f7f9;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+main .images .imagetext1,
+main .images .imagetext2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+main .images .imagetext1 img,
+main .images .imagetext2 img {
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+main .images .imagetext1 .text,
+main .images .imagetext2 .text {
+  display: none;
+}
+main .images .imagetext1 .text p,
+main .images .imagetext2 .text p {
+  color: red;
+  margin: 0;
 }
 
 /*# sourceMappingURL=domaci9.css.map */
