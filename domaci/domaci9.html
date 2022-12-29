@@ -56,59 +56,63 @@
         <div class="pricing">
             <h2>PRICING</h2>
             <p>Our services prices</p>
+            <div class="tabledevil">
+                <table>
+                    <tr>
+                        <td class="skrivena"></td>
+                        <td class="skrivena" colspan="2"></td>
+                        <td colspan="2" class="crvena">Price</td>
+                    </tr>
+                    <tr>
+                        <td class="skrivena"></td>
+                        <td class="skrivena" colspan="2"></td>
+                        <td class="tamna">1 Year</td>
+                        <td class="tamna">1 Years</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="crvena">Location</td>
+                        <td colspan="2" class="tamna">Startup</td>
+                        <td>3000$</td>
+                        <td>3000$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tamna">Small Business</td>
+                        <td>3000$</td>
+                        <td>3000$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tamna">Medium company</td>
+                        <td>3000$</td>
+                        <td>3000$</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="tabledevil">
-            <table>
-                <tr>
-                    <td></td>
-                    <td colspan="2"></td>
-                    <td colspan="2">Price</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="2"></td>
-                    <td>1 Year</td>
-                    <td>1 Years</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Location</td>
-                    <td colspan="2">Startup</td>
-                    <td>3000$</td>
-                    <td>3000$</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Small Business</td>
-                    <td>3000$</td>
-                    <td>3000$</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Medium company</td>
-                    <td>3000$</td>
-                    <td>3000$</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h2></h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.4634680735207!2d19.812638015744447!3d45.258641255156626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b11b344ae4511%3A0xf64e9b8edaa10e2d!2sDr%20Svetislava%20Kasapinovi%C4%87a%2025-19%2C%20Novi%20Sad!5e0!3m2!1sen!2srs!4v1672251364272!5m2!1sen!2srs"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div>
+        <div class="contact">
+            <h2>CONTACT US</h2>
+            <div class="contactcontainer">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.4634680735207!2d19.812638015744447!3d45.258641255156626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b11b344ae4511%3A0xf64e9b8edaa10e2d!2sDr%20Svetislava%20Kasapinovi%C4%87a%2025-19%2C%20Novi%20Sad!5e0!3m2!1sen!2srs!4v1672251364272!5m2!1sen!2srs"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
                 <form>
-                    <select name="gender" id="gender">
-                        <option value="Mr">Mr</option>
-                        <option value="Mrs">Mrs</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                    <input type="email" name="email" id="email" placeholder="Your email">
-                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    <div class="formcontainer">
+                        <select name="gender" id="gender">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input type="text" name="name" id="name" placeholder="Your name" class="name">
+                        <input type="email" name="email" id="email" placeholder="Your email" class="email">
+                        <textarea name="message" id="message" placeholder="Your message" class="message"></textarea>
+                    </div>
                 </form>
             </div>
         </div>
     </main>
-    <footer><p>Copyright © 2016 <span>Billing the Kid</span></p></footer>
+    <footer>
+        <p>Copyright © 2016 <span class="red">Billing the Kid</span></p>
+    </footer>
 </body>
 
 </html>

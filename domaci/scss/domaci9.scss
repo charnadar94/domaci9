@@ -119,8 +119,17 @@ main {
         }
     }
 
-    .tabledevil {
+    .pricing {
         width: 100%;
+
+        @include sectionheaderdark;
+
+        p {
+            text-align: center;
+            color: $buttoncolor;
+            font-size: 24px;
+        }
+
         table {
             margin-left: 25%;
             width: 50%;
@@ -128,8 +137,103 @@ main {
         }
 
         td {
-            border: 1px solid black;
+            border: 1px solid $buttoncolor;
+            color: $buttoncolor;
             text-align: center;
+            vertical-align: middle;
+            height: 30px;
+
+            &.crvena {
+                background-color: $red;
+                @include tablefont;
+            }
+
+            &.tamna {
+                background-color: $headfoot;
+                @include tablefont;
+            }
+
+            &.skrivena {
+                opacity: 0;
+                border: 0px solid $backgroundsection;
+            }
         }
+
+    }
+
+    .contact {
+        background-color: $backgroundsection;
+        width: 100%;
+        height: 50%;
+
+        @include sectionheaderdark;
+        
+        .contactcontainer {
+            width: 70%;
+            padding-left: 15%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .map {
+                width: 40%;
+                height: 50%;
+            }
+
+            form {
+                background-color: $red;
+                width: 50%;
+                height: 50%;
+
+                .formcontainer {
+                    margin: 2%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+
+                    select {
+                        width: 20%;
+                        @include inputheight;
+                    }
+
+                    .name {
+                        width: 70%;
+                        @include inputheight;
+                    }
+
+                    .email {
+                        width: 100%;
+                        margin-top: 5%;
+                        @include inputheight;
+                    }
+                    
+                    .message {
+                        width: 100%;
+                        margin-top: 5%;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    background-color: $headfoot;
+    position: fixed;
+    bottom: 0;
+
+    p {
+        text-align: center;
+    }
+
+    .red {
+        color: $red;
     }
 }

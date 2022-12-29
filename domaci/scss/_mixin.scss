@@ -35,3 +35,23 @@
         opacity: 100%;
     }
 }
+
+@mixin sectionheaderdark {
+    h2 {
+        text-align: center;
+        color: $headfoot;
+        font-weight: bold;
+        font-size: 36px;
+        padding-top: 2%;
+    }
+}
+
+@mixin tablefont {
+    color: $backgroundsection;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@mixin inputheight {
+    height: 30px;
+}
