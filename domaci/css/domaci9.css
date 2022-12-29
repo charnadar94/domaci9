@@ -87,7 +87,7 @@ main .images {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-main .images .imagetext {
+main .images .imagetextleft {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,28 +95,72 @@ main .images .imagetext {
   margin-left: 30%;
   margin-right: 30%;
 }
-main .images .imagetext img {
+main .images .imagetextleft img {
   opacity: 60%;
   border-radius: 50%;
   width: 20%;
   height: 20%;
 }
-main .images .imagetext img:hover {
+main .images .imagetextleft img:hover {
   opacity: 100%;
   cursor: pointer;
 }
-main .images .imagetext .text {
+main .images .imagetextleft .text {
   opacity: 0;
 }
-main .images .imagetext .text p {
+main .images .imagetextleft .text p {
   color: red;
   margin: 0;
 }
-main .images .imagetext img + .text {
+main .images .imagetextleft img + .text {
   opacity: 0;
 }
-main .images .imagetext img:hover + .text {
+main .images .imagetextleft img:hover + .text {
   opacity: 100%;
+}
+main .images .imagetextright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  flex-direction: row-reverse;
+}
+main .images .imagetextright img {
+  opacity: 60%;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+main .images .imagetextright img:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+main .images .imagetextright .text {
+  opacity: 0;
+}
+main .images .imagetextright .text p {
+  color: red;
+  margin: 0;
+}
+main .images .imagetextright img + .text {
+  opacity: 0;
+}
+main .images .imagetextright img:hover + .text {
+  opacity: 100%;
+}
+main .tabledevil {
+  width: 100%;
+}
+main .tabledevil table {
+  margin-left: 25%;
+  width: 50%;
+  border-collapse: collapse;
+}
+main .tabledevil td {
+  border: 1px solid black;
+  text-align: center;
 }
 
 /*# sourceMappingURL=domaci9.css.map */
